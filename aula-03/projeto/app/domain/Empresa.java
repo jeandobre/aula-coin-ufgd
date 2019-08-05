@@ -16,8 +16,8 @@ public class Empresa {
     }
 
     public Boolean estaValidoNomeFantasia(){
-        if(nomeFantasia.length() > 0) return Boolean.TRUE;
+        if(nomeFantasia == null || nomeFantasia.length() == 0) return Boolean.FALSE;
 
-        return Boolean.FALSE;
+        return Boolean.TRUE;
     }
 }

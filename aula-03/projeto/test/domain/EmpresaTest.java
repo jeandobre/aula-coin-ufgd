@@ -45,4 +45,19 @@ public class EmpresaTest extends UnitTest {
         assertTrue(nomeValido);
     }
 
+    @Test
+    public void deveAtirarErroAoValidarNomeFantasia(){
+        Empresa empresa = new Empresa("");
+        empresa.nomeFantasia = "";
+        Boolean nomeValido = empresa.estaValidoNomeFantasia();
+        assertFalse(nomeValido);
+
+
+        empresa = new Empresa("");
+        empresa.nomeFantasia = null;
+        nomeValido = empresa.estaValidoNomeFantasia();
+        assertFalse(nomeValido);
+
+    }
+
 }
