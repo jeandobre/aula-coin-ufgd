@@ -18,7 +18,11 @@ public class Cliente extends GenericModel {
 
     public String nome;
 
+<<<<<<< HEAD
     @Required(message = "Aluno é obrigatório")
+=======
+    @Required(message = "CPF é obrigatório")
+>>>>>>> 3162a5e222217185beb4b55010ff9d27836b0509
     public String cpf;
 
     public String celular;
