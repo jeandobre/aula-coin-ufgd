@@ -1,7 +1,6 @@
 package handler;
 
 import daos.AlunoDAO;
-import daos.DAO;
 
 public class NovoAluno {
 

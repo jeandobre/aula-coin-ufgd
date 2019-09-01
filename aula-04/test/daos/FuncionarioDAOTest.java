@@ -1,6 +1,7 @@
 package daos;
 
 import models.Funcionario;
+import play.test.Fixtures;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,12 +13,12 @@ public class FuncionarioDAOTest extends FuncionarioDAO {
     public FuncionarioDAOTest() {
         funcionarios = new ArrayList<>();
 
-        Funcionario funcionario1 = new Funcionario();
+        /*Funcionario funcionario1 = new Funcionario();
         funcionario1.id = new Long(1);
         funcionario1.nome = "Jean Alexandre";
-        funcionario1.siape = "1547845";
+        funcionario1.siape = "1547845";*/
 
-        funcionarios.add(funcionario1);
+        Fixtures.loadModels("data-funcionarios.yml");
     }
 
     @Override

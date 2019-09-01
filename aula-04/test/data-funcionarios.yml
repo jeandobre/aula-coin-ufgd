@@ -1,0 +1,18 @@
+# you describe your data using the YAML notation here
+# and then load them using Fixtures.load("data-funcionarios.yml")
+
+# User(bob):
+#   email: bob@gmail.com
+#   password: secret
+#   fullname: Bob
+
+
+Funcionario(jean):
+   id: 1
+   nome: Jean Alexandre Dobre
+   siape: 154565
+
+Funcionario(joao):
+  id : 2
+  nome: João Paulo
+  siape: 145474

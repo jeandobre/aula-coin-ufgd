@@ -1,10 +1,6 @@
 package handler;
 
 import daos.DAO;
-<<<<<<< HEAD
-=======
-import models.CPF;
->>>>>>> 3162a5e222217185beb4b55010ff9d27836b0509
 import models.Cliente;
 import play.data.validation.Validation;
 
