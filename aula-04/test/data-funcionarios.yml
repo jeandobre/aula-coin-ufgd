@@ -16,3 +16,8 @@ Funcionario(joao):
   id : 2
   nome: João Paulo
   siape: 145474
+
+Funcionario(pedro):
+  id : 4
+  nome: Pedro Pedreira
+  siape: 455654

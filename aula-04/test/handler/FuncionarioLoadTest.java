@@ -21,7 +21,7 @@ public class FuncionarioLoadTest extends UnitTest {
     public void testarDadosDeFuncionariosCarregadoPorArquivoYaml(){
 
         FuncionarioDAO dao = new FuncionarioDAO();
-        assertEquals(2, dao.listarTodos().size());
+        assertEquals(3, dao.listarTodos().size());
 
     }
 
