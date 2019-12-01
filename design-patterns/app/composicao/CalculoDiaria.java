@@ -5,8 +5,9 @@ public class CalculoDiaria implements CalculoValor {
     private final static double HORA = 1;
 
     @Override
-    public void calcular(double valorDiaria) {
+    public double calcular(double valorDiaria) {
         this.valorDiaria = valorDiaria;
+        return valorDiaria;
     }
 
     public double calcular(long periodo, Veiculo veiculo){
