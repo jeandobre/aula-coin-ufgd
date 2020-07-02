@@ -39,19 +39,26 @@ public class ProcessoSeletivoFacade extends Facade {
 		//TODO: alterar
 	}
 
-	public void removerProcesso(Integer processoId) {
-		ProcessoSeletivo processoSeletivo = this.repositorio.obterPorId(processoId);
+	public Result removerProcesso(Integer processoId) {
 
-		//Negócio e regras
+		try {
+			ProcessoSeletivo processoSeletivo = this.repositorio.obterPorId(processoId);
 
-		this.enviarEmailParaTodasPessoas(processoSeletivo);
+			//Negócio e regras
 
-		this.repositorio.remover(processoSeletivo);
+			this.enviarEmailParaTodasPessoas(processoSeletivo);
+
+			this.repositorio.remover(processoSeletivo);
+
+			return Result.sucessUpdated("Processo seletivo removido com sucesso!", processoId);
+
+		} catch (Exception e){
+			return Result.initWithError(Result.codes.EINTERNAL, "Erro ao enviar email!");
+		}
 	}
 
-	private void enviarEmailParaTodasPessoas(ProcessoSeletivo processoSeletivo) {
+	private void enviarEmailParaTodasPessoas(ProcessoSeletivo processoSeletivo) throws Exception {
 		//TODO: impelementar
 	}
-
 
 }

@@ -33,10 +33,11 @@ public class ProcessoSeletivoJPA implements ProcessoSeletivoRepository {
 	@Override
 	public void removerPorId(Integer id) {
 
+		System.out.println("Buscar o id: " + id);
 	}
 
 	@Override
 	public void salvar(ProcessoSeletivo processoSeletivo) {
-
+		System.out.println(processoSeletivo);
 	}
 }

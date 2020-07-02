@@ -1,6 +1,7 @@
 # Routes
 
-
+POST	/processos-seletivos									ProcessoSeletivoCommands.novo
+DELETE /processos-seletivos/{id}						ProcessoSeletivoCommands.remover
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public

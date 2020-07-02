@@ -10,7 +10,6 @@ public class Facade {
 	protected final Result transformarPersistenceAdapterEmResultado(PersistenceException ex, String acao) {
 
 		String title = "Erro ao " + acao;
-		int code = 412;
 		String mensagem = ex.getLocalizedMessage();
 		if (ex.getCause() instanceof ConstraintViolationException) {
 
@@ -27,7 +26,7 @@ public class Facade {
 			//status = ENOTFOUND;
 		}
 
-		return Result.initWithError(code, mensagem);
+		return Result.initWithError(Result.codes.ENOTFOUND, mensagem);
 	}
 
 	public static String transformarMensagemErroVindoBancoDadosPostgreSQL(String mensagem){
