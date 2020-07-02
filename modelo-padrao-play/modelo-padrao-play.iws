@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7044f360-9c9f-4a37-a6d7-8dbfff9bb0c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/application/Dto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/application/Facade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/application/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/CommandController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/MensagemErro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/ProcessoSeletivoQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivoJPA.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modelo-padrao-play.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modelo-padrao-play.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modelo-padrao-play.iws" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/application/ProcessosSeletivosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/domain/processoseletivo/ProcessoSeletivoMockLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/DocViewerPlugin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_Application_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_play__framework_templates_tags_welcome_en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Application" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.PlayDocumentation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.ProjectDocumentation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.CheatSheetHelper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.CheatSheetHelper$1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.CheatSheetHelper$2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.CheatSheetHelper$3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.CheatSheetHelper$4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.LangMenuHelper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.LangMenuHelper$1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/helpers.LangMenuHelper$LangMenu" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/DocViewerPlugin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/controllers/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/controllers/PlayDocumentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/controllers/ProjectDocumentation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/helpers/CheatSheetHelper$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/helpers/CheatSheetHelper$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/helpers/CheatSheetHelper$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/helpers/CheatSheetHelper$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/helpers/CheatSheetHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/helpers/LangMenuHelper$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/helpers/LangMenuHelper$LangMenu.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/classes/helpers/LangMenuHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application/processoseletivo/AlterarProcessoSeletivoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/application/processoseletivo/AlterarProcessoSeletivoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application/processoseletivo/NovoProcessoSeletivoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/application/processoseletivo/NovoProcessoSeletivoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application/processoseletivo/ProcessoSeletivoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/application/processoseletivo/ProcessoSeletivoFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/ProcessosSeletivos.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ProcessoSeletivoCommands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/data.yml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1e89sZ6mWzRMDn4CV9UXngidX7G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/modelo-padrao-play.ipr" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="controllers" />
+      <recent name="application" />
+      <recent name="domain.processoseletivo" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7044f360-9c9f-4a37-a6d7-8dbfff9bb0c7" name="Default Changelist" comment="" />
+      <created>1593692559722</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593692559722</updated>
+      <workItem from="1593692560947" duration="12678000" />
+    </task>
+    <task id="LOCAL-00001" summary="Iniciando o projeto">
+      <created>1593697097449</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593697097449</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adicionando configurações iniciais">
+      <created>1593697345883</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593697345883</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="routes" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Iniciando o projeto" />
+    <MESSAGE value="Adicionando configurações iniciais" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionando configurações iniciais" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="352" y="115" width="1024" height="845" key="#Project_Structure" timestamp="1593692577737">
+      <screen x="59" y="27" width="1621" height="1023" />
+    </state>
+    <state x="352" y="115" width="1024" height="845" key="#Project_Structure/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593692577737" />
+    <state x="677" y="256" width="524" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1593704732878">
+      <screen x="59" y="27" width="1621" height="1023" />
+    </state>
+    <state x="677" y="256" width="524" height="562" key="#com.intellij.ide.util.MemberChooser/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593704732878" />
+    <state x="637" y="409" width="627" height="264" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593699750550">
+      <screen x="59" y="27" width="1621" height="1023" />
+    </state>
+    <state x="637" y="409" width="627" height="264" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593699750550" />
+    <state x="411" y="109" width="907" height="857" key="CommitChangelistDialog2" timestamp="1593697345825">
+      <screen x="59" y="27" width="1621" height="1023" />
+    </state>
+    <state x="411" y="109" width="907" height="857" key="CommitChangelistDialog2/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593697345825" />
+    <state x="464" y="273" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593697129100">
+      <screen x="59" y="27" width="1621" height="1023" />
+    </state>
+    <state x="464" y="273" width="800" height="528" key="Vcs.Push.Dialog.v2/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593697129100" />
+    <state x="655" y="454" width="419" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593701067570">
+      <screen x="59" y="27" width="1621" height="1023" />
+    </state>
+    <state x="655" y="454" width="419" height="166" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593701067570" />
+  </component>
+</project>

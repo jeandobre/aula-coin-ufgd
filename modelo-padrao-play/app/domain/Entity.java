@@ -1,5 +1,7 @@
 package domain;
 
-public abstract class Entity {
+import play.db.jpa.GenericModel;
+
+public abstract class Entity extends GenericModel {
 
 }

@@ -1,16 +1,20 @@
 package domain.processoseletivo;
 
-import domain.Entity;
 import domain.processoseletivo.pessoa.Pessoa;
 
+import javax.persistence.*;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class ProcessoSeletivo extends Entity {
+@Entity
+@Table(name = "processos_seletivos", schema = "public")
+public class ProcessoSeletivo extends domain.Entity {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String titulo;
 	private List<Pessoa> pessoas;

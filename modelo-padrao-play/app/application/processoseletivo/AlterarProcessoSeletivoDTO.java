@@ -1,6 +1,8 @@
 package application.processoseletivo;
 
-public class AlterarProcessoSeletivoDTO {
+import application.Dto;
+
+public class AlterarProcessoSeletivoDTO extends Dto {
 
 	public Integer id;
 	public String titulo;
