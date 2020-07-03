@@ -1,6 +1,6 @@
 package domain.processoseletivo.pessoa;
 
-import domain.Entity;
+import infra.Entity;
 
 import java.util.Objects;
 

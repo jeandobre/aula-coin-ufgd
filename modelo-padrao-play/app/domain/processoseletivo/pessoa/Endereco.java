@@ -1,6 +1,6 @@
 package domain.processoseletivo.pessoa;
 
-import domain.ValueObject;
+import infra.ValueObject;
 
 public class Endereco extends ValueObject {
 

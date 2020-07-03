@@ -1,6 +1,6 @@
 package application.processoseletivo;
 
-import application.Dto;
+import infra.Dto;
 
 // ou pode ser NovoProcessoSeletivoCommand
 public class NovoProcessoSeletivoDTO extends Dto {

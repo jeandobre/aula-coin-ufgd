@@ -1,4 +1,4 @@
-package domain;
+package infra;
 
 import play.db.jpa.GenericModel;
 

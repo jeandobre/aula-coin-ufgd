@@ -1,4 +1,4 @@
-package domain;
+package infra;
 
 public abstract class ValueObject {
 }

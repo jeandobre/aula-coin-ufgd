@@ -2,14 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7044f360-9c9f-4a37-a6d7-8dbfff9bb0c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/domain/GenericDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivoGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/application/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/application/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/application/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/application/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application/Dto.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/infra/Dto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/infra/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/infra/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application/processoseletivo/AlterarProcessoSeletivoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/application/processoseletivo/AlterarProcessoSeletivoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/application/processoseletivo/NovoProcessoSeletivoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/application/processoseletivo/NovoProcessoSeletivoDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/application/processoseletivo/ProcessoSeletivoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/application/processoseletivo/ProcessoSeletivoFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/CommandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/infra/CommandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/MensagemErro.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/infra/ErrorMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/ProcessoSeletivoCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ProcessoSeletivoCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivoJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivoJPA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/routes" beforeDir="false" afterPath="$PROJECT_DIR$/conf/routes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/ProcessoSeletivoQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ProcessoSeletivoQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/DomainEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/infra/DomainEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/infra/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/GenericDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/infra/GenericDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/ValueObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/infra/ValueObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivoCriado.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivoCriado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivoGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/processoseletivo/ProcessoSeletivoGeneric.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/processoseletivo/pessoa/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/processoseletivo/pessoa/Endereco.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/domain/processoseletivo/pessoa/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/domain/processoseletivo/pessoa/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modelo-padrao-play.iws" beforeDir="false" afterPath="$PROJECT_DIR$/modelo-padrao-play.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593692559722</updated>
-      <workItem from="1593692560947" duration="15179000" />
+      <workItem from="1593692560947" duration="24228000" />
     </task>
     <task id="LOCAL-00001" summary="Iniciando o projeto">
       <created>1593697097449</created>
@@ -85,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593705715917</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Criando generic daos para exemplificar.">
+      <created>1593713403979</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1593713403979</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +116,8 @@
     <MESSAGE value="Iniciando o projeto" />
     <MESSAGE value="Adicionando configurações iniciais" />
     <MESSAGE value="Aplicando novos padrões de projeto, CQRS e tests unitários." />
-    <option name="LAST_COMMIT_MESSAGE" value="Aplicando novos padrões de projeto, CQRS e tests unitários." />
+    <MESSAGE value="Criando generic daos para exemplificar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando generic daos para exemplificar." />
   </component>
   <component name="WindowStateProjectService">
     <state x="352" y="115" width="1024" height="845" key="#Project_Structure" timestamp="1593692577737">
@@ -109,14 +128,18 @@
       <screen x="59" y="27" width="1621" height="1023" />
     </state>
     <state x="677" y="256" width="524" height="562" key="#com.intellij.ide.util.MemberChooser/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593713357284" />
+    <state x="410" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1593717077018">
+      <screen x="59" y="27" width="1621" height="1023" />
+    </state>
+    <state x="410" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593717077018" />
     <state x="637" y="409" width="627" height="264" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593699750550">
       <screen x="59" y="27" width="1621" height="1023" />
     </state>
     <state x="637" y="409" width="627" height="264" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593699750550" />
-    <state x="411" y="109" width="907" height="857" key="CommitChangelistDialog2" timestamp="1593705715856">
+    <state x="411" y="109" width="907" height="857" key="CommitChangelistDialog2" timestamp="1593713403811">
       <screen x="59" y="27" width="1621" height="1023" />
     </state>
-    <state x="411" y="109" width="907" height="857" key="CommitChangelistDialog2/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593705715856" />
+    <state x="411" y="109" width="907" height="857" key="CommitChangelistDialog2/59.27.1621.1023/1680.0.1366.768@59.27.1621.1023" timestamp="1593713403811" />
     <state x="464" y="273" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1593697129100">
       <screen x="59" y="27" width="1621" height="1023" />
     </state>

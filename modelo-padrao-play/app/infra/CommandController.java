@@ -1,6 +1,5 @@
-package controllers;
+package infra;
 
-import application.Dto;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import play.Logger;
@@ -38,12 +37,12 @@ public abstract class CommandController  extends Controller {
 
 		Http.Header header = request.headers.get("content-type");
 		if(header == null){
-			renderJSON(new MensagemErro("415",
+			renderJSON(new ErrorMessage("415",
 					"Não aceitável","O tipo de conteúdo(content-type) não pode ser nulo ou vazio!"));
 		}
 
 		if(header != null && !header.value().equals("application/json") && !request.method.equals("DELETE")){
-			renderJSON(new MensagemErro("415",
+			renderJSON(new ErrorMessage("415",
 					"Não suportado", "Tipo de media não suportado - " + header.value()));
 		}
 	}
@@ -75,12 +74,12 @@ public abstract class CommandController  extends Controller {
 	protected final void validarParametros(Integer id, String type){
 		if (id == null) {
 			response.status = 400;
-			renderJSON(new MensagemErro("400", "O parâmetro 'id' do " + type + " não pode ser nulo ou vazio."));
+			renderJSON(new ErrorMessage("400", "O parâmetro 'id' do " + type + " não pode ser nulo ou vazio."));
 		}
 
 		if (id <= 0) {
 			response.status = 400;
-			renderJSON(new MensagemErro("400", "O parâmetro 'id' do " + type + " não pode ser menor ou igual a zero."));
+			renderJSON(new ErrorMessage("400", "O parâmetro 'id' do " + type + " não pode ser menor ou igual a zero."));
 		}
 
 		if(estaNulo(id)) renderIdNuloDoTipo(id, type);
@@ -89,7 +88,7 @@ public abstract class CommandController  extends Controller {
 
 	private final void renderIdNuloDoTipo(Integer id, String type){
 		response.status = 512;
-		renderJSON(new MensagemErro("512", "O " + type + " com o id " + id + " não foi encontrado!"));
+		renderJSON(new ErrorMessage("512", "O " + type + " com o id " + id + " não foi encontrado!"));
 
 	}
 
@@ -98,9 +97,9 @@ public abstract class CommandController  extends Controller {
 		if (Validation.hasErrors()) {
 
 			response.status = 512;
-			List<MensagemErro> mensagens = new ArrayList<>();
+			List<ErrorMessage> mensagens = new ArrayList<>();
 			for (Error error : validation.errors()) {
-				mensagens.add(new MensagemErro("512", error.message(), error.getKey()));
+				mensagens.add(new ErrorMessage("512", error.message(), error.getKey()));
 			}
 			renderJSON(mensagens);
 		}
@@ -110,7 +109,7 @@ public abstract class CommandController  extends Controller {
 
 		if (objetoData.get("data") == null) {
 			response.status = 400;
-			renderJSON(new MensagemErro("400","O campo data não pode ser nulo ou vazio!"));
+			renderJSON(new ErrorMessage("400","O campo data não pode ser nulo ou vazio!"));
 		}
 
 		Dto dto = null;
@@ -122,11 +121,11 @@ public abstract class CommandController  extends Controller {
 
 			Logger.error("converter data para json: ", objetoData.get("data").toString());
 			response.status = 400;
-			renderJSON(new MensagemErro("400", "O JSON do campo data é inválido!"));
+			renderJSON(new ErrorMessage("400", "O JSON do campo data é inválido!"));
 		}
 
 		if(dto == null){
-			renderJSON(new MensagemErro("400", "O objeto data não pode ser nulo ou vazio!"));
+			renderJSON(new ErrorMessage("400", "O objeto data não pode ser nulo ou vazio!"));
 		}
 
 		return dto;

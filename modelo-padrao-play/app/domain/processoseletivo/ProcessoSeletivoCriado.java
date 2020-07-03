@@ -1,6 +1,6 @@
 package domain.processoseletivo;
 
-import domain.DomainEvent;
+import infra.DomainEvent;
 
 import java.util.Date;
 

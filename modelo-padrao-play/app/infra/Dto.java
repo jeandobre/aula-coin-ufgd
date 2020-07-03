@@ -1,4 +1,4 @@
-package application;
+package infra;
 
 public abstract class Dto {
 }

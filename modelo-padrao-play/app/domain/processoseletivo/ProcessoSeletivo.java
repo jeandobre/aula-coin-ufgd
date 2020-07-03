@@ -1,6 +1,7 @@
 package domain.processoseletivo;
 
 import domain.processoseletivo.pessoa.Pessoa;
+import play.data.validation.Required;
 
 import javax.persistence.*;
 import java.util.Collections;
@@ -11,11 +12,12 @@ import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "processos_seletivos", schema = "public")
-public class ProcessoSeletivo extends domain.Entity {
+public class ProcessoSeletivo extends infra.Entity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	@Required
 	private String titulo;
 	private List<Pessoa> pessoas;
 
@@ -55,14 +57,14 @@ public class ProcessoSeletivo extends domain.Entity {
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (o == null || getClass() != o.getClass()) return false;
+		if (!super.equals(o)) return false;
 		ProcessoSeletivo that = (ProcessoSeletivo) o;
-		return Objects.equals(id, that.id) &&
-				Objects.equals(titulo, that.titulo);
+		return Objects.equals(id, that.id);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id, titulo);
+		return Objects.hash(super.hashCode(), id);
 	}
 
 	@Override

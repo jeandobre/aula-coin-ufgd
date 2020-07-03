@@ -1,12 +1,13 @@
 package controllers;
 
-import application.Result;
+import infra.Result;
 import application.processoseletivo.NovoProcessoSeletivoDTO;
 import application.processoseletivo.ProcessoSeletivoFacade;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import domain.processoseletivo.ProcessoSeletivoJPA;
 import domain.processoseletivo.ProcessoSeletivoRepository;
+import infra.CommandController;
 import play.mvc.Before;
 import java.io.InputStreamReader;
 

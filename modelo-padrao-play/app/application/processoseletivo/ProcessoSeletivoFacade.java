@@ -1,13 +1,12 @@
 package application.processoseletivo;
 
-import application.Facade;
-import application.Result;
+import infra.Facade;
+import infra.Result;
 import domain.processoseletivo.ProcessoSeletivo;
 import domain.processoseletivo.ProcessoSeletivoRepository;
+import play.Logger;
 
-import javax.persistence.EntityNotFoundException;
 import javax.persistence.PersistenceException;
-import java.rmi.UnexpectedException;
 
 // ou ProcessoSeletivoService
 public class ProcessoSeletivoFacade extends Facade {
@@ -22,12 +21,14 @@ public class ProcessoSeletivoFacade extends Facade {
 
 		try {
 			ProcessoSeletivo processoSeletivo = new ProcessoSeletivo(dto.titulo);
-
+			//processoSeletivo.
 			this.repositorio.salvar(processoSeletivo);
 
 			return Result.sucessCreated("Novo processo seletivo criado com sucesso!", processoSeletivo.id());
 
 		} catch (PersistenceException ex) {
+
+			Logger.error("Erro ");
 
 			return transformarPersistenceAdapterEmResultado(ex, "salvar");
 

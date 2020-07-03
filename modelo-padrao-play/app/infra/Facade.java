@@ -1,4 +1,4 @@
-package application;
+package infra;
 
 import javax.persistence.PersistenceException;
 import javax.validation.ConstraintViolationException;

@@ -1,6 +1,6 @@
 package domain.processoseletivo;
 
-import domain.GenericDao;
+import infra.GenericDao;
 
 import java.util.List;
 
@@ -20,4 +20,6 @@ public class ProcessoSeletivoGeneric implements GenericDao<ProcessoSeletivo, Int
 	public void salvar(ProcessoSeletivo entidade) {
 
 	}
+
+
 }

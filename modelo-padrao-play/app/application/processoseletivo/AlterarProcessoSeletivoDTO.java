@@ -1,6 +1,6 @@
 package application.processoseletivo;
 
-import application.Dto;
+import infra.Dto;
 
 public class AlterarProcessoSeletivoDTO extends Dto {
 
